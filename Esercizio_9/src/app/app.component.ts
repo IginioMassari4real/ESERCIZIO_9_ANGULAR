@@ -13,4 +13,11 @@ import { NavigationComponent } from './navigation/navigation.component';
 })
 export class AppComponent {
   title = 'Esercizio_9';
+
+  bottone:boolean=true
+
+  onRiceviDati(value: any){
+
+    this.bottone=value
+  }
 }

@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, Output, EventEmitter} from '@angular/core';
+
 
 @Component({
   selector: 'app-navigation',
@@ -9,5 +10,12 @@ import { Component } from '@angular/core';
   styleUrl: './navigation.component.css'
 })
 export class NavigationComponent {
+
+  bottone:boolean=true
+  setBtn1(){this.bottone=true,   this.mandaDatiEvento.emit(this.bottone); }
+  setBtn2(){this.bottone=false,    this.mandaDatiEvento.emit(this.bottone);  }
+
+  @Output() mandaDatiEvento = new EventEmitter<boolean>();
+
 
 }
