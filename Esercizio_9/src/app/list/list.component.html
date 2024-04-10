@@ -1,23 +1,23 @@
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" rel="stylesheet">
 <br>
-<h1 align="center" style="background-color: blue; color: white; font-family: Arial, Helvetica, sans-serif;">VIAGGI DISPONIBILI:</h1>
+<h1 align="center" style="background-color: blue; color: white; font-family: Arial, Helvetica, sans-serif; font-size: xx-large;">VIAGGI DISPONIBILI:</h1>
 <br>
 <br>
-<div *ngFor="let element of viaggi index as i">
+<div *ngFor="let element of viaggi; index as i">
 <div class="container" style="width: 2000px;">
     <div class="card">
-        <h1 align="center" style="color: blue; margin-left:auto; margin-right:auto; font-family: Arial, Helvetica, sans-serif;">{{element.destinazione|uppercase}}</h1>
-        <br>
+        <h1 align="center" style="color: blue; margin-left:auto; margin-right:auto; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-size: xxx-large;">{{element.destinazione|uppercase}}</h1>
         <br>
         <img class="card-img-top" src="{{element.immagine}}" alt="Card image">
         <div class="card-body" style="font-family: Arial, Helvetica, sans-serif; color: blue;" >
-            <br>
-            <br>
+            <p style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: xx-large;">INFORMAZIONI VIAGGIO:</p>
             <p>- DESTINAZIONE: {{element.destinazione}}</p>
             <p>- APPARTENENZA: {{element.appartenenza}}</p>
             <p>- DURATA: {{element.durata}} </p>
             <p>- PIANETA DI PARTENZA: {{element.partenza}} </p>
-            <p>- DATA DI PARTENZA: {{element.datapartenza}} </p>
-            <p>- DATA DI ARRIVO: {{element.dataarrivo}}</p>
+            <p>- DATA DI PARTENZA: {{element.datapartenza | date: 'longDate' }} </p>
+            <p>- DATA DI ARRIVO: {{element.dataarrivo | date: 'longDate' }}</p>
             <p>- COSTO VIAGGIO: {{element.costo|currency:'EUR':'symbol'}} </p>
         </div>
 </div>
