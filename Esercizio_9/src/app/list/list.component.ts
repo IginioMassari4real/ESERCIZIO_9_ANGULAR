@@ -18,9 +18,9 @@ viaggi=[
 
  {destinazione:"Marte", appartenenza:"Sistema Solare", durata:"9 mesi", partenza:"Terra (Kennedy Space Center (KSC) - Situato a Cape Canaveral, in Florida)", datapartenza: new Date(2024, 5, 15), dataarrivo: new Date(2024, 2, 15), costo:"155000", immagine:"https://www.nationalgeographic.it/upload/ngi-hero/mars-globe-valles-marineris-enhanced.jpg", distanza:"1,52 UA"},
 
- {destinazione:"Saturno", appartenenza:"Sistema Solare", durata:"1 anno e mezzo", partenza:"Terra (Kennedy Space Center (KSC) - Situato a Cape Canaveral, in Florida)", datapartenza: new Date(2024, 5, 25), dataarrivo: new Date(2025, 11, 25), costo:"120000", immagine:"https://www.xtrafondos.com/wallpapers/vertical/saturno-en-la-oscuridad-9352.jpg", distanza:"5,20 UA"},
+ {destinazione:"Saturno", appartenenza:"Sistema Solare", durata:"1 anno e mezzo", partenza:"Terra (Kennedy Space Center (KSC) - Situato a Cape Canaveral, in Florida)", datapartenza: new Date(2024, 5, 25), dataarrivo: new Date(2025, 11, 25), costo:"120000", immagine:"https://www.xtrafondos.com/wallpapers/vertical/saturno-en-la-oscuridad-9352.jpg", distanza:"9,58 UA"},
 
- {destinazione:"Giove", appartenenza:"Sistema Solare", durata:"2 anni e mezzo", partenza:"Terra (Kennedy Space Center (KSC) - Situato a Cape Canaveral, in Florida)", datapartenza: new Date(2024, 5, 17), dataarrivo: new Date(2026, 11, 17), costo:"133000", immagine:"https://tech.everyeye.it/public/immagini/23032019/nasa_notizia.jpg", distanza:"9,58 UA"},
+ {destinazione:"Giove", appartenenza:"Sistema Solare", durata:"2 anni e mezzo", partenza:"Terra (Kennedy Space Center (KSC) - Situato a Cape Canaveral, in Florida)", datapartenza: new Date(2024, 5, 17), dataarrivo: new Date(2026, 11, 17), costo:"133000", immagine:"https://tech.everyeye.it/public/immagini/23032019/nasa_notizia.jpg", distanza:"5,20 UA"},
 
 ]
 
