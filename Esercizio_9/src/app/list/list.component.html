@@ -3,39 +3,25 @@
 <h1 align="center" style="background-color: blue; color: white; font-family: Arial, Helvetica, sans-serif; font-size: xx-large;">VIAGGI DISPONIBILI:</h1>
 <br>
 <div *ngFor="let element of viaggi; index as i">
-<div class="container" style="width: 2000px;">
-
-    <div class="card mb-3" style="max-width: 540px;">
+    <div class="card mb-3" style="width: 1500px;">
         <div class="row g-0">
           <div class="col-md-4">
-            <img src="..." class="img-fluid rounded-start" alt="...">
+            <img class="card-img-top" src="{{element.immagine}}" alt="Card image" style="height: 70vh;">
           </div>
           <div class="col-md-8">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text"></p>
-              <p class="card-text"></p>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-    <div class="card col-md-8">
-        <h1 align="center" style="color: blue; margin-left:auto; margin-right:auto; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-size: xxx-large;">{{element.destinazione|uppercase}}</h1>
-        <br>
-        <img class="card-img-top" src="{{element.immagine}}" alt="Card image">
-        <div class="card-body" style="font-family: Arial, Helvetica, sans-serif; color: blue;" >
-            <p style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: xx-large;">INFORMAZIONI VIAGGIO:</p>
+            <div class="card-body" style="font-family: Arial, Helvetica, sans-serif; color: blue;">
+              <h1 align="center" style="color: blue; margin-left:auto; margin-right:auto; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-size: xx-large;">{{element.destinazione|uppercase}}</h1>
+              <p style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: x-large;">INFORMAZIONI VIAGGIO:</p>
             <p>- DESTINAZIONE: {{element.destinazione}}</p>
             <p>- APPARTENENZA: {{element.appartenenza}}</p>
-            <p>- DURATA: {{element.durata}} </p>
+            <p>- DURATA VIAGGIO: {{element.durata}} </p>
+            <p>- DISTANZA VIAGGIO: {{element.distanza}}</p>
             <p>- PIANETA DI PARTENZA: {{element.partenza}} </p>
             <p>- DATA DI PARTENZA: {{element.datapartenza | date: 'longDate' }} </p>
             <p>- DATA DI ARRIVO: {{element.dataarrivo | date: 'longDate' }}</p>
             <p>- COSTO VIAGGIO: {{element.costo|currency:'EUR':'symbol'}} </p>
+            </div>
+          </div>
         </div>
-</div>
-<br>
-<br>
-</div>
-</div>
+      </div>
+      <br>
