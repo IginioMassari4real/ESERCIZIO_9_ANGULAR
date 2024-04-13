@@ -7,10 +7,24 @@
 }
 .button_1:hover{
     color: darkblue; 
-    font-family: 'Franklin Gothic Medium','Arial Narrow', Arial, sans-serif; 
     font-size: x-large;
 }
 @font-face {
     font-family: NASA;
     src: url(../../assets/nasalization-rg.otf);
+  }
+  div {
+    width: 70px;
+    height: 70px;
+    background: black;
+    position:relative ;
+    animation-name: animazione;
+    animation-duration: 1s;  
+    animation-delay: 1s;
+    animation-fill-mode: both;
+  }
+  
+  @keyframes animazione {
+    from {top: -110px; background-color: black;}
+    to {top: -7px; background-color: blue;}
   }

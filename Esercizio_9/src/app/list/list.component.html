@@ -1,6 +1,6 @@
 <link href="https://cdn.jsdelivr.net/npm/tailwindcss2.2.19/dist/tailwind.min.css" rel="stylesheet">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" rel="stylesheet">
-<h1 align="center" style="background-color: blue; color: white; font-family: NASA; font-size: xx-large;">VIAGGI DISPONIBILI:</h1>
+<h1 align="center" style="background-color: darkblue; color: white; font-family: NASA; font-size: xx-large;">VIAGGI DISPONIBILI:</h1>
 <br>
 <div *ngFor="let element of viaggi; index as i">
     <div class="card mb-3" style="width: 1500px;  background-color: lightblue; ">
@@ -10,7 +10,7 @@
           </div>
           <div class="col-md-8">
             <div class="card-body" style="font-family: NASA; color: blue;">
-              <h1 align="center" style="color: blue; margin-left:auto; margin-right:auto; font-family: NASA; font-size: xx-large;">{{element.destinazione|uppercase}}</h1>
+              <h2 align="center" style="color: blue; margin-left:auto; margin-right:auto; font-family: NASA; font-size: xxx-large;">{{element.destinazione|uppercase}}</h2>
               <p style="font-family: NASA; font-size: x-large;">INFORMAZIONI VIAGGIO:</p>
             <p>- DESTINAZIONE: {{element.destinazione}}</p>
             <p>- APPARTENENZA: {{element.appartenenza}}</p>
